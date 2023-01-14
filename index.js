@@ -99,7 +99,7 @@ buttonField.addEventListener('click', () => {
             // console.log('success');
             document.querySelector('.container').innerHTML =
                 `
-            <div class="login-form">
+        <div class="login-form">
             <div class="user">
                 <img src="${user.img}" alt="">
             </div>
@@ -108,7 +108,7 @@ buttonField.addEventListener('click', () => {
             
         </div>
             
-        `
+        `;
         }
         else if (userEmail == user.email && userPassWord != user.password) {
             alert('Your Password is incorrect');
@@ -117,9 +117,13 @@ buttonField.addEventListener('click', () => {
             alert('Your Email is incorrect');
         }
 
-        else {
+        /* else {
             alert('Type Valid Email and Password');
-        }
+        } */
+        /*  else if (userEmail != user.email && userPassWord != user.password) {
+             alert('Type Valid Email and Password');
+         } */
+
     })
 
 
